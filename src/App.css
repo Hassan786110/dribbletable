@@ -1,0 +1,370 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;1,400&display=swap");
+
+.App {
+  text-align: center;
+  scroll-behavior: smooth;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+.mainDiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+  background-color: #f5f6f7;
+}
+h1 {
+  margin-bottom: 20px;
+  color: #34455a;
+}
+.container {
+  overflow: auto;
+  width: 90%;
+  height: 90%;
+  position: relative;
+}
+.container::-webkit-scrollbar {
+  display: none;
+}
+table {
+  border-collapse: separate;
+  border-spacing: 0 8px;
+}
+th {
+  font-size: 15px;
+  padding: 10px 15px;
+  color: #546375;
+  white-space: nowrap;
+}
+td {
+  padding: 7px 15px;
+  border: 2px solid #edeff2;
+  background-color: white;
+  color: #415164;
+  text-transform: capitalize;
+  white-space: nowrap;
+  border-radius: 3px;
+  text-align: center;
+  font-size: 15px;
+  font-weight: 600;
+  border-left: hidden;
+}
+canvas {
+  height: 50px !important;
+  width: 50px !important;
+  margin-top: -10px;
+}
+.hospitalHeading {
+  position: sticky;
+  left: 0;
+  z-index: 1;
+  background-color: #f5f6f7;
+}
+.hospital {
+  border-left: 2px solid #edeff2;
+  box-shadow: 10px 0px 15px #e4e4e4;
+  position: sticky;
+  left: 0%;
+  text-align: left;
+  border-radius: 7px 0 0 7px;
+}
+.category1 {
+  margin-top: 5px;
+  font-size: 22px;
+  color: #235b9e;
+}
+.category2 {
+  margin-top: 5px;
+  font-size: 29px;
+  color: #01a7e7;
+}
+.access1,
+.access2,
+.access3 {
+  margin-top: 5px;
+  font-size: 22px;
+}
+.access1 {
+  color: #7eba38;
+}
+.access2 {
+  color: #01a8e8;
+}
+.access3 {
+  color: #ef1177;
+}
+.goal {
+  margin-top: 5px;
+  font-size: 22px;
+  color: #7eba38;
+}
+.livePeoples {
+  font-size: 22px;
+  color: #7eba38;
+}
+.livePeoples > span {
+  color: #455568;
+  font-size: 20px;
+  margin-left: 2px;
+}
+.age {
+  font-size: 30px;
+  margin-top: 5px;
+  color: #01a7e7;
+}
+.country > img {
+  margin-top: 5px;
+  width: 40px;
+  height: 40px;
+}
+.save {
+  border-left: 2px solid #edeff2;
+  padding: 10px 7px;
+  margin-left: 10px;
+  background-color: white;
+  color: grey;
+  border-radius: 0 10px 10px 0;
+  position: sticky;
+  right: 0;
+  cursor: pointer;
+  box-shadow: -10px 0px 21px 0px #e4e4e4;
+}
+.saveIcon1 {
+  margin-top: 5px;
+  font-size: 18.5px;
+}
+.saveIcon2 {
+  margin-top: 5px;
+  font-size: 18.5px;
+  color: #01a7e7;
+}
+.perform {
+  position: relative;
+}
+.perform > p {
+  cursor: pointer;
+}
+.total {
+  position: relative;
+}
+.total > p {
+  cursor: pointer;
+}
+.last {
+  position: relative;
+}
+.last > p {
+  cursor: pointer;
+}
+.categoryHeading {
+  position: relative;
+}
+.categoryHeading > p {
+  cursor: pointer;
+}
+.gender {
+  position: relative;
+}
+.gender > p {
+  cursor: pointer;
+}
+.gender > div > div {
+  height: 220px;
+  left: -85%;
+}
+.gender > div > div > section:nth-child(2) {
+  margin-top: 7px;
+}
+.gender > div > div > section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+.gender > div > div > section > input {
+  border-radius: 15px;
+  border: 1px solid #c2c3c3;
+  font-size: 16px;
+  width: 79px;
+  padding: 7px 14px;
+}
+.region {
+  position: relative;
+}
+.region > p {
+  cursor: pointer;
+}
+.region > div > div {
+  left: -95%;
+}
+.male,
+.female {
+  font-size: 22px;
+  border-radius: 15px;
+  border: 1px solid #c2c3c3;
+  padding: 7px;
+  width: 40px;
+  height: 40px;
+}
+.female:hover {
+  color: #ef1378 !important;
+}
+.male:hover {
+  color: #01a7e7 !important;
+}
+.notfound {
+  height: 344px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.ReactFlagsSelect-module_selectOptions__3LNBJ {
+  top: 65%;
+}
+.ReactFlagsSelect-module_fullWidthOptions__1XeR6 {
+  left: 10%;
+  right: 10%;
+}
+.ReactFlagsSelect-module_fullWidthOptions__1XeR6::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+#rfs-btn {
+  border-radius: 20px;
+}
+.ReactFlagsSelect-module_fullWidthOptions__1XeR6::-webkit-scrollbar-track {
+  background: transparent;
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 4px;
+  border: 2px solid transparent;
+}
+.ReactFlagsSelect-module_fullWidthOptions__1XeR6::-webkit-scrollbar-thumb {
+  background: white;
+  border: 1px solid #c2c3c3;
+  border-radius: 4px;
+}
+
+.scrollBtn {
+  position: fixed;
+  background-color: #01a7e7;
+  color: white;
+  border: none;
+  height: 55px;
+  width: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  font-weight: 600;
+  border-radius: 25px 0 0 25px;
+  right: 7.6%;
+  top: 54.5%;
+  cursor: pointer;
+}
+.scrollBtn:hover {
+  padding-left: 5px;
+}
+.scrollBtn:focus {
+  outline: none;
+}
+.scrollBtn2 {
+  position: fixed;
+  background-color: #01a7e7;
+  color: white;
+  border: none;
+  height: 55px;
+  width: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  font-weight: 600;
+  border-radius: 0 25px 25px 0;
+  left: 32.3%;
+  top: 54.5%;
+  cursor: pointer;
+}
+.scrollBtn2:hover {
+  padding-left: 5px;
+}
+.scrollBtn2:focus {
+  outline: none;
+}
+
+.source {
+  border-right: none;
+}
+
+@media only screen and (max-width: 576px) {
+  .hospital {
+    position: unset;
+  }
+  .hospitalHeading {
+    position: unset;
+  }
+  .save {
+    position: unset;
+  }
+  .scrollBtn {
+    right: 5.1%;
+    height: 65px;
+    width: 35px;
+    font-size: 22px;
+    border-radius: 30px 0 0 30px;
+  }
+  .scrollBtn2 {
+    font-size: 22px;
+    height: 65px;
+    width: 35px;
+    left: 5.1%;
+    border-radius: 0 30px 30px 0;
+  }
+}
